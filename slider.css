@@ -1,0 +1,55 @@
+.portfolio__container {
+  padding: var(--spacing-12) 0; /* Уберем боковые падинги, чтобы слайдер был во всю ширину */
+  background-color: var(--color-bg-soft);
+}
+
+.portfolio__title,
+.portfolio__subtitle {
+  text-align: center;
+  margin-bottom: var(--spacing-4);
+}
+
+.portfolio__subtitle {
+  margin-bottom: var(--spacing-12);
+}
+
+.swiper {
+  height: 500px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.swiper-slide img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: var(--spacing-8);
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    height: auto;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* посмотри папку, мне нужно чтоб изображения ещё растягивались каждое по свой ширине, высота у всех одинаковая, сейчас они в ширину не растягиваются, там флексы, посмотри slider.css */
